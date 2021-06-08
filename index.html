@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page">
+        <audio autoplay="autoplay" id="mymusic">
+            <source src="./img/yang.mp3" type="audio/mp3">
+        </audio>
+        <div class="header">
+            <div class="header-left">
+                <div><img src="./img/kuwo.jpg" alt="" style="width:100%;height:100%"></div>
+                <div><a href="">首页</a></div>
+                <div><a href="">榜单</a></div>
+                <div><a href="">歌手</a></div>
+                <div><a href="">下载酷我客户端</a></div>
+            </div>
+            <div class="header-center">
+                <div class="tb1"><a href="">美女秀</a></div>
+                <div class="tb2"><a href="">酷我耳机</a></div>
+                <div class="tb3"><a href="">VIP会员</a></div>
+                <div class="tb4"><a href="">i听</a></div>
+            </div>
+            <div class="header-right">
+                <div><a href="">更多服务</a></div>
+                <div><a href="">登录</a></div>
+                <div><a href="">^</a></div>
+                <div><img src="./img/search.png" alt=""></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="song">
+                <div class="words-one">喜羊羊</div>
+                <div class="words-two">
+                    <div>专辑：</div>
+                    <div>儿歌大全</div>
+                    <div>歌手：</div>
+                    <div>华语群星</div>
+                    <div>分享</div>
+                    <div><img src="./img/email.jpg" alt=""></div>
+                    <div>评论</div>
+                </div>
+                <div class="words-three">上传时间：2015-10-02 &nbsp;&nbsp;&nbsp;&nbsp;歌词来源：明大相思湖网球社</div>
+                <hr/>
+                <div class="words-four">
+                    <p>白云因为我变得柔软</p>
+                    <p>别看我只是一只羊</p>
+                    <p>羊儿的聪明难以想象</p>
+                    <p>天再高心情一样奔放</p>
+                    <p>每天都追着太阳</p>
+                    <p>有什么难题 去牵绊我 都不会去心伤</p>
+                    <p>有什么危险 在我面前 也不会去慌乱</p>
+                    <p>就算有狼群 把我追捕 也当作游戏一场</p>
+                    <p>有什么时间 都爱开心 笑容都会飞翔</p>
+                    <p>就算会摔倒 站了起来 永远不会沮丧</p>
+                    <p>在所有天气 拥有叫人 大笑的力量</p>
+                    <p>虽然我只是羊</p>
+                </div>
+            </div>
+            <div class="rendering">
+                <div class="tupian"><img src="./img/1.jpg" alt="" id="tupian"></div>
+                <div class="playerLeft">
+                    <div class="musicControll">
+                        <div class="play" id="wp_playBtn"></div>
+                    </div>
+                    <div class="progress">
+                        <div id="prograssBar">
+                            <div id="wp_bufBar">
+                                <div class="prograssBar" id="wp_processBar"></div>
+                                <a href="##" id="wp_processBtn"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playerRight">
+                        <p id="wp_playTime">00.00</p>
+                        <div id="wp_mute"></div>
+                    </div>
+                </div>
+                <div class="download">
+                    <div class="wp_download"></div>
+                    <a href="">免费下载这首歌</a>
+                </div>
+                <div class="barrage">
+                    <div class="head-portrait">
+                    <!-- 头像 -->
+                        <img src="./img/guoziyi.jpg" alt="">
+                    </div>
+                    <div class="bubble">
+                    <!-- 弹幕 -->
+                        <img src="./img/bubble.png" alt="">
+                        <div class="b_words">
+                            <p>郭子仪——H5班</p>
+                            <div class="b_box">
+                                <img src="./img/signal.png" alt="">
+                                <p>喜羊羊与灰太狼</p>
+                                <a href="">去现场></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="background-color: gainsboro; height: 1px; border: none;">
+        <div class="bottom">
+            <div class="comment">
+                <div class="comment-first">
+                    <div class="bc_comment">
+                        <p>评论</p>
+                        <p id="bc_ping">0条评论</p>
+                    </div>
+                    <hr style="background-color: gainsboro; height: 1px; border: none;">
+                    <div class="bc_send">
+                        <div class="bs_headcom">
+                            <img src="./img/guoziyi.jpg" alt="">
+                            <textarea id="valtxt" value="" onkeyup="keypress()"></textarea>
+                        </div>
+                        <div class="bs_tubiao">
+                            <img src="./img/smile.png" alt="">
+                            <p id="bs_zishu">已输入 0个字</p>
+                            <button id="con">评论</button>
+                        </div>
+                    </div>
+                    <p class="cf_words">精彩评论</p>
+                    <hr style="background-color: gainsboro; height: 1px; border: none;">
+                </div>
+                <div id="comment_second">
+                    <!-- 评论区页面 -->
+                    <div class="cs">
+                        <img src="./img/5.jpg" alt="" class="cs_img">
+                        <div class="cs_right">
+                            <div class="cr_one">
+                                <p class="nameid">郭子仪</p>
+                                <p class="share">分享</p>
+                            </div>
+                            <div class="cr_content">Too</div>
+                            <div class="cr_two">
+                                <p class="cr_time">2017-05-10 07:00:42</p>
+                                <p>删除</p>
+                                <img src="./img/zan.png" alt="" class="ct_zan">
+                                <p>回复</p>
+                            </div>
+                            <hr style="background-color: gainsboro; height: 1px; border: none;">
+                        </div>
+                    </div>
+                </div>
+                <!-- 分页图标 -->
+                <div class="comment-third">
+                    <div class="ct">
+                        <div><</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var btn = document.getElementById("wp_playBtn"); //播放结点
+    var timer = document.getElementById("wp_playTime"); // 计时器结点
+    var mymusic = document.getElementById("mymusic"); // 音频结点
+    var prograssBar = document.getElementById("prograssBar"); //进度条结点
+    var currentProgress = document.getElementById("wp_processBar"); //进度条走过长度的结点
+    var point = document.getElementById("wp_processBtn"); //进度条起始原点
+    var mutedBtn = document.getElementById("wp_mute"); // 静音结点
+    var tupian = document.getElementById("tupian"); //喜洋洋图片节点
+
+    
+
+    var intervalId;
+
+    //播放暂停
+    btn.onclick = function() {
+        if(mymusic.paused) {
+            this.style.backgroundPosition = "-138px -194px";
+            mymusic.play();
+            intervalId = setInterval(changeProgress,1000);
+            //喜羊羊图片旋转
+            tupian.style.animation = "animation1 2s linear infinite";
+        }
+        else {
+            clearInterval(intervalId);
+            this.style.backgroundPosition = "-137px -153px";
+            mymusic.pause();
+            tupian.style.animation = "null";
+        }
+    }
+
+    function changeProgress() {
+        var currentTime = mymusic.currentTime;
+        var duration = mymusic.duration;
+
+        //当前播放时间显示
+        var minute = parseInt(currentTime / 60);
+        var second = currentTime % 60;
+        minute = minute>=10 ? parseInt(minute) : ("0" + parseInt(minute));
+        second = second>=10 ? parseInt(second) : ("0" + parseInt(second));
+        timer.innerHTML = minute + ":" + second;
+
+        //进度条效果
+        var barWidth = prograssBar.offsetWidth;
+        var rate = currentTime/duration; //播放进度的百分比
+        currentProgress.style.width = barWidth*rate + "px";
+        point.style.left = barWidth*rate + "px";
+    }
+
+    //静音设置
+    var m = 0;
+    mutedBtn.onclick = function () {
+        if (m % 2 == 0) {
+        mutedBtn.style.backgroundPosition = "-309px -129px";
+        mymusic.volume = 0;
+        m++;
+      } else {
+        mutedBtn.style.backgroundPosition = "-263px -113px";
+        mymusic.volume = 1;
+        m++;
+      }
+    }
+
+    
+
+
+    // 评论区
+    var valtxt = document.getElementById("valtxt"); //评论框
+    var con = document.getElementById("con"); //提交评论按钮
+    var comment_second = document.getElementById("comment_second");
+    var bc_ping = document.getElementById("bc_ping");//几条评论
+    var bs_zishu = document.getElementById("bs_zishu");//输入字数
+
+    // 实时获取文本框输入字数
+    function keypress(){
+        var length = valtxt.value.length;
+        bs_zishu.innerHTML = "已输入 "+ length +"个字";
+    }
+    
+    // 获取当前时间
+    var nowTime =0;
+    function getNowDate() {
+        var myDate = new Date;
+        var year = myDate.getFullYear();
+        var mon = myDate.getMonth() + 1;
+        var date = myDate.getDate();
+        var hours = myDate.getHours();
+        var minutes = myDate.getMinutes();
+        var seconds = myDate.getSeconds();
+
+        mon = mon>=10 ? mon : ("0" + mon);
+        date = date>=10 ? date : ("0" + date);
+        hours = hours>=10 ? hours : ("0" + hours);
+        minutes = minutes>=10 ? minutes : ("0" + minutes);
+        seconds = seconds>=10 ? seconds : ("0" + seconds);
+        
+        nowTime= year + "-" + mon + "-" + date + " " + hours + ":" + minutes + ":" + seconds; 
+        
+        return nowTime;
+    }
+
+    // saveNote()把数据存储到本地
+    function saveNote(noteContent) {
+        getNowDate();
+        var now = nowTime;
+        var noteList = localStorage['noteList'];
+        //判空
+        if (noteList == null || noteList =="") {
+            noteList = '[]';
+        }
+        noteList = JSON.parse(noteList);
+        var noteObj = {
+            noteId : noteList.length,
+            noteContent : noteContent, //便签的内容
+            noteTime : now
+        }
+        noteList.push(noteObj);
+        noteList = JSON.stringify(noteList);
+        localStorage["noteList"] = noteList;
+    }
+
+    // 从本地存储中获取数据，显示到页面上
+    function getNotes() {
+        comment_second.innerHTML = "";
+        bs_zishu.innerHTML = "已输入 0个字";
+        var noteList = localStorage['noteList'];
+        if(noteList == null || noteList == "") {
+            noteList ='[]';
+        }
+        noteList = JSON.parse(noteList);
+        for(var i = 0; i <noteList.length; i++) {
+            var divCS = document.createElement("div");
+            divCS.setAttribute("class","cs");
+            var imgCS = document.createElement("img");
+            divCS.appendChild(imgCS); //为divNode1添加一个子节点
+            imgCS.setAttribute("class","cs_img");
+            imgCS.setAttribute("src","./img/5.jpg");
+
+            var divCS_right = document.createElement("div");
+            divCS.appendChild(divCS_right);
+            divCS_right.setAttribute("class","cr_right");
+
+            var divCR_one = document.createElement("div");
+            divCS_right.appendChild(divCR_one);
+            divCR_one.setAttribute("class","cr_one");
+
+            var pNameid = document.createElement("p");
+            divCR_one.appendChild(pNameid);
+            pNameid.setAttribute("class","nameid");
+            pNameid.setAttribute("noteid",noteList[i]['noteId']);
+            pNameid.innerHTML = "用户 "+noteList[i]['noteId'];
+
+            var pShare = document.createElement("p");
+            divCR_one.appendChild(pShare);
+            pShare.setAttribute("class","share");
+            pShare.innerHTML = "分享";
+
+            var divCR_content = document.createElement("div");
+            divCS_right.appendChild(divCR_content);
+            divCR_content.setAttribute("class","cr_content");
+            divCR_content.innerHTML = noteList[i]['noteContent'];
+
+            var divCR_two = document.createElement("div");
+            divCS_right.appendChild(divCR_two);
+            divCR_two.setAttribute("class","cr_two");
+
+            var pCR_time = document.createElement("p");
+            divCR_two.appendChild(pCR_time);    
+            pCR_time.setAttribute("class","cr_time");
+            pCR_time.innerHTML = noteList[i]['noteTime'];
+
+            var pNode1 = document.createElement("p");
+            divCR_two.appendChild(pNode1); 
+            pNode1.innerHTML = "删除";
+
+            var imgCT = document.createElement("img");
+            divCR_two.appendChild(imgCT);
+            imgCT.setAttribute("class","ct_zan");
+            imgCT.setAttribute("src","./img/zan.png");
+
+            var pNode2 = document.createElement("p");
+            divCR_two.appendChild(pNode2);
+            pNode2.innerHTML = "回复";
+
+            comment_second.insertBefore(divCS,comment_second.children[0]); //把评论插入父节点前面
+            
+        }
+        bc_ping.innerHTML = i+"条评论";
+    }
+    
+    con.onclick = function() {
+        if(valtxt.value == "") {
+            alert("评论内容不能为空!");
+        }
+        else {
+            saveNote(valtxt.value);
+            getNotes();
+            valtxt.value = "";
+        }
+    }
+
+    window.onload = function(){
+        getNotes();
+    }
+
+</script>
+</html>

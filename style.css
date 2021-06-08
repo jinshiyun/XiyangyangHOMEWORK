@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 页面导航 */
+.header {
+    display: flex;
+    height: 70px;
+    background-color: black;
+    justify-content: center;
+}
+.header-left, .header-center, .header-right {
+    display: flex;
+    align-items: center;
+}
+.header-left div{
+    padding-left: 25px;
+}
+.header-left div a {
+    color: white;
+    text-decoration: none;
+}
+.header-left div:nth-child(1) {
+    height: 50px;
+    width: 106px;
+}
+.header-left div:nth-child(2) >a{
+    color: gold;
+}
+
+.header-center {
+    margin-left: 35px;
+}
+.header-center div{
+    margin-left: 25px;
+}
+.header-center div>a{
+    color: rgb(170, 167, 167);
+    padding-left: 15px;
+    font-size: 10px;
+    text-decoration: none;
+}
+.tb1 {
+    height: 15px;
+    background: url(./img/2.png);
+    position: relative;
+    background-position: -230px -26px;
+}
+.tb2 {
+    height: 15px;
+    background: url(./img/2.png);
+    position: relative;
+    background-position: -230px -26px;
+}
+.tb3 {
+    height: 15px;
+    background: url(./img/2.png);
+    position: relative;
+    background-position: -230px -26px;
+}
+.tb4 {
+    height: 15px;
+    background: url(./img/2.png);
+    position: relative;
+    background-position: -230px -26px;
+}
+
+.header-right {
+    display: flex;
+}
+.header-right div {
+    margin-left: 25px;
+    line-height: center;
+}
+.header-right div>a {
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+/* 页面歌词 */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.song {
+    margin-top: 80px;
+    width: 500px;
+}
+.words-one {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.words-two {
+    display: flex;
+    justify-content: space-between;
+}
+.words-two div{
+    text-align: center;
+    font-size: 13px;
+}
+.words-two div:nth-child(even) {
+    /* margin-left: -35px; */
+    color: goldenrod;
+}
+.words-two div:nth-child(6) {
+    align-items: center;
+}
+.words-two div:nth-child(7) {
+    /* margin-left: -35px; */
+    color: goldenrod;
+}
+.words-three {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+.words-four {
+    margin-top: 20px;
+    text-align: center;
+}
+.words-four p {
+    padding: 10px 10px;
+}
+.words-four p:nth-child(6) {
+    color: goldenrod;
+}
+
+
+/* 页面播放器 */
+.rendering {
+    width: 500px;
+    margin-top: 80px;
+    /* border: 1px solid blue; */
+}
+@keyframes animation1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.tupian {
+    display: flex;
+    justify-content: center;
+}
+.tupian img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* animation: animation1 2s linear infinite; */
+}
+
+/* 播放暂停 */
+.playerLeft {
+    display: flex;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    background-color:rgba(170, 167, 167, 0.658);
+}
+.musicControll .play {
+    /* border: 1px solid orange; */
+	width: 40px;
+	height:40px;
+	background: url(./img/icon.png);
+    background-position: -137px -113px;
+}
+.progress {
+    width: 350px;
+    height: 40px;
+}
+#prograssBar {
+    float: left;
+	position: relative;
+	width: 350px;
+	height: 4px;
+	background: url(./img/prograssBg.png);
+	margin: 20px 20px 0px 0px;
+	display: inline;
+    
+}
+.prograssBar {
+    width: 0px;
+    height: 4px;
+    background: yellow;
+}
+#wp_bufBar {
+	width: 0px;
+	height: 4px;
+	background: url(./img/prograssBg.png);
+}
+#wp_processBtn {
+    width: 10px;
+    height: 10px;
+    background: url(./img/icon.png);
+    background-position: 0px -128px;
+    position: absolute;
+    top: -3px;
+}
+
+.playerRight {
+    display: flex;
+    margin-left: 10px;
+}
+#wp_playTime {
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: snow;
+}
+
+/* 静音 */
+#wp_mute {
+	position: relative;
+	width: 20px;
+	height: 16px;
+	background: url(./img/icon.png) no-repeat -263px -113px;
+	margin-top: 12px;
+	z-index: 13;
+    left: 10px;
+}
+
+/* 下载图标 */
+.download {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color:rgb(66, 50, 170);
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 150px;
+    align-items: center;
+}
+.wp_download {
+    width: 20px;
+    height: 22px;
+    margin-left: 35px;
+    background: url(./img/icon.png);
+    background-position: -242px -140px;
+}
+.download a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 弹幕 */
+.barrage {
+    width: 450px;
+    height: 100px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+    /* border: 1px solid green; */
+}
+.head-portrait img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.bubble img {
+    width: 300px;
+    height: 80px;
+}
+.b_words {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 70px;
+    /* border: 1px solid yellowgreen; */
+}
+.b_words>p {
+    font-size: 10px;
+    color: gray;
+    padding-left: 10px;
+}
+.b_box {
+    display: flex;
+    height: 30px;
+    margin-top: 10px;
+}
+.b_box img {
+    width: 30px;
+    height: 30px;
+}
+.b_box>p {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.b_box>a {
+    padding-left: 25px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 30px;
+    text-decoration: none;
+    color:mediumorchid;
+}
+
+/* 页面底部 */
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+.comment {
+    width: 800px;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+}
+
+/* 评论 */
+.bc_comment {
+    display: flex;
+    margin-bottom: 20px;
+}
+.bc_comment p:nth-child(1) {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.bc_comment p:nth-child(2) {
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+/* 评论头像 */
+/* .bs_headcom {
+    border: 1px solid yellowgreen;
+} */
+.bs_headcom img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -30px;
+}
+
+/* 评论框 */
+#valtxt {
+    border: 1px solid gainsboro;
+    width: 700px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+/* 表情和提交 */
+.bs_tubiao {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 75px;
+    /* border: 1px solid violet; */
+}
+.bs_tubiao img {
+    width: 25px;
+    height: 25px;
+}
+.bs_tubiao p {
+    font-size: 13px;
+    padding-top: 6px;
+    padding-left: 500px;
+    padding-right: 20px;
+}
+#con {
+    width: 75px;
+    height: 25px;
+    color: white;
+    border: none;
+    background-color: rgb(255, 187, 0);
+}
+.cf_words {
+    font-size: 20px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-bottom:20px ;
+}
+
+/* 精彩评论 */
+.cs {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid springgreen; */
+}
+.cs_img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+/* .cs_right {
+    margin-left: 20px;
+} */
+
+.cr_one {
+    display: flex;
+    margin-bottom: 10px;
+    /* border: 1px solid skyblue; */
+}
+.nameid {
+    color: goldenrod;
+    font-size: 13px;
+}
+.share {
+    padding-left: 600px;
+    font-size: 10px;
+}
+
+.cr_content {
+    width: 670px;
+    flex-wrap: wrap;
+    /* border: 1px solid orange; */
+}
+
+.cr_two {
+    display: flex;
+    margin-top: 10px;
+    /* border: 1px solid tomato; */
+}
+.cr_two>p {
+    font-size: 10px;
+    padding-left: 10px;
+}
+.cr_time {
+    color: gray;
+    display: block;
+    position: relative;
+    left: -10px;
+    padding-right: 450px;
+}
+.ct_zan {
+    width: 15px;
+    height: 15px;
+    padding-left: 5px;
+}
+
+/* 分页图标 */
+.comment-third {
+    display: flex;
+    justify-content: center;
+}
+
+.ct {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.ct div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    background-color: lightgrey;
+}
+.ct div:hover {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(255, 187, 0);
+    color: white;
+}
